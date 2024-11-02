@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Assimp</author>
+      <authoring_tool>Voxel Max</authoring_tool>
+    </contributor>
+    <created>2024-09-13T12:53:23</created>
+    <modified>2024-09-13T12:53:23</modified>
+    <unit name="meter" meter="1" />
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="Material_E6ACECDF-AA5D-4498-A325-C3E1434E1A74_1-diffuse-image">
+      <init_from>Texture_E6ACECDF-AA5D-4498-A325-C3E1434E1A74_1_albedo.png</init_from>
+    </image>
+    <image id="Material_E6ACECDF-AA5D-4498-A325-C3E1434E1A74_1-emission-image">
+      <init_from>Texture_E6ACECDF-AA5D-4498-A325-C3E1434E1A74_1_emission.png</init_from>
+    </image>
+    <image id="Material_10FDE145-7AF5-4914-A65C-D9DCAB0BDA3D_1-diffuse-image">
+      <init_from>Texture_10FDE145-7AF5-4914-A65C-D9DCAB0BDA3D_1_albedo.png</init_from>
+    </image>
+    <image id="Material_10FDE145-7AF5-4914-A65C-D9DCAB0BDA3D_1-emission-image">
+      <init_from>Texture_10FDE145-7AF5-4914-A65C-D9DCAB0BDA3D_1_emission.png</init_from>
+    </image>
+  </library_images>
+  <library_effects>
+    <effect id="Material_E6ACECDF-AA5D-4498-A325-C3E1434E1A74_1-fx" name="Material_E6ACECDF-AA5D-4498-A325-C3E1434E1A74_1">
+      <profile_COMMON>
+        <newparam sid="Material_E6ACECDF-AA5D-4498-A325-C3E1434E1A74_1-emission-surface">
+          <surface type="2D">
+            <init_from>Material_E6ACECDF-AA5D-4498-A325-C3E1434E1A74_1-emission-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Material_E6ACECDF-AA5D-4498-A325-C3E1434E1A74_1-emission-sampler">
+          <sampler2D>
+            <source>Material_E6ACECDF-AA5D-4498-A325-C3E1434E1A74_1-emission-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="Material_E6ACECDF-AA5D-4498-A325-C3E1434E1A74_1-diffuse-surface">
+          <surface type="2D">
+            <init_from>Material_E6ACECDF-AA5D-4498-A325-C3E1434E1A74_1-diffuse-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Material_E6ACECDF-AA5D-4498-A325-C3E1434E1A74_1-diffuse-sampler">
+          <sampler2D>
+            <source>Material_E6ACECDF-AA5D-4498-A325-C3E1434E1A74_1-diffuse-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <texture texture="Material_E6ACECDF-AA5D-4498-A325-C3E1434E1A74_1-emission-sampler" texcoord="CHANNEL0" />
+            </emission>
+            <diffuse>
+              <texture texture="Material_E6ACECDF-AA5D-4498-A325-C3E1434E1A74_1-diffuse-sampler" texcoord="CHANNEL0" />
+            </diffuse>
+            <shininess>
+              <float sid="shininess">100.000023</float>
+            </shininess>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Material_10FDE145-7AF5-4914-A65C-D9DCAB0BDA3D_1-fx" name="Material_10FDE145-7AF5-4914-A65C-D9DCAB0BDA3D_1">
+      <profile_COMMON>
+        <newparam sid="Material_10FDE145-7AF5-4914-A65C-D9DCAB0BDA3D_1-emission-surface">
+          <surface type="2D">
+            <init_from>Material_10FDE145-7AF5-4914-A65C-D9DCAB0BDA3D_1-emission-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Material_10FDE145-7AF5-4914-A65C-D9DCAB0BDA3D_1-emission-sampler">
+          <sampler2D>
+            <source>Material_10FDE145-7AF5-4914-A65C-D9DCAB0BDA3D_1-emission-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="Material_10FDE145-7AF5-4914-A65C-D9DCAB0BDA3D_1-diffuse-surface">
+          <surface type="2D">
+            <init_from>Material_10FDE145-7AF5-4914-A65C-D9DCAB0BDA3D_1-diffuse-image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Material_10FDE145-7AF5-4914-A65C-D9DCAB0BDA3D_1-diffuse-sampler">
+          <sampler2D>
+            <source>Material_10FDE145-7AF5-4914-A65C-D9DCAB0BDA3D_1-diffuse-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <texture texture="Material_10FDE145-7AF5-4914-A65C-D9DCAB0BDA3D_1-emission-sampler" texcoord="CHANNEL0" />
+            </emission>
+            <diffuse>
+              <texture texture="Material_10FDE145-7AF5-4914-A65C-D9DCAB0BDA3D_1-diffuse-sampler" texcoord="CHANNEL0" />
+            </diffuse>
+            <shininess>
+              <float sid="shininess">100.000023</float>
+            </shininess>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="Material_E6ACECDF-AA5D-4498-A325-C3E1434E1A74_1" name="Material_E6ACECDF-AA5D-4498-A325-C3E1434E1A74_1">
+      <instance_effect url="#Material_E6ACECDF-AA5D-4498-A325-C3E1434E1A74_1-fx"/>
+    </material>
+    <material id="Material_10FDE145-7AF5-4914-A65C-D9DCAB0BDA3D_1" name="Material_10FDE145-7AF5-4914-A65C-D9DCAB0BDA3D_1">
+      <instance_effect url="#Material_10FDE145-7AF5-4914-A65C-D9DCAB0BDA3D_1-fx"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="_84115BF9-51D5-4C7B-99F9-BAD68281997C" name="84115BF9-51D5-4C7B-99F9-BAD68281997C" >
+      <mesh>
+        <source id="_84115BF9-51D5-4C7B-99F9-BAD68281997C-positions" name="_84115BF9-51D5-4C7B-99F9-BAD68281997C-positions">
+          <float_array id="_84115BF9-51D5-4C7B-99F9-BAD68281997C-positions-array" count="348"> -14 -20 -3 -14 -20 -1 -14 20 -1 -14 20 -3 -14 -17 -1 -14 -17 3 -14 17 3 -14 17 -1 -13 -20 -2 -13 -20 -1 -13 -17 -1 -13 -17 -2 -13 17 -2 -13 17 -1 -13 20 -1 -13 20 -2 10 -17 -1 10 -17 3 10 17 3 10 17 -1 11 -17 -2 11 -17 -1 11 17 -1 11 17 -2 13 -20 -3 13 -20 -2 13 -19 -2 13 -19 -3 13 19 -3 13 19 -2 13 20 -2 13 20 -3 14 -19 -3 14 -19 -2 14 19 -2 14 19 -3 -14 -20 -3 -13 -20 -3 -13 -20 -1 -14 -20 -1 -13 -20 -3 13 -20 -3 13 -20 -2 -13 -20 -2 13 -19 -3 14 -19 -3 14 -19 -2 13 -19 -2 -14 -17 -1 10 -17 -1 10 -17 3 -14 -17 3 -13 -17 -2 11 -17 -2 11 -17 -1 -13 -17 -1 -14 17 -1 10 17 -1 10 17 3 -14 17 3 -13 17 -2 11 17 -2 11 17 -1 -13 17 -1 13 19 -3 14 19 -3 14 19 -2 13 19 -2 -14 20 -3 -13 20 -3 -13 20 -1 -14 20 -1 -13 20 -3 13 20 -3 13 20 -2 -13 20 -2 -14 -20 -3 -14 20 -3 13 20 -3 13 -20 -3 13 -19 -3 13 19 -3 14 19 -3 14 -19 -3 -13 -20 -2 -13 -17 -2 13 -17 -2 13 -20 -2 13 -19 -2 13 19 -2 14 19 -2 14 -19 -2 11 -17 -2 11 20 -2 13 20 -2 13 -17 -2 -13 17 -2 -13 20 -2 11 20 -2 11 17 -2 -14 -20 -1 -14 -17 -1 -13 -17 -1 -13 -20 -1 10 -17 -1 10 17 -1 11 17 -1 11 -17 -1 -14 17 -1 -14 20 -1 -13 20 -1 -13 17 -1 -14 -17 3 -14 17 3 10 17 3 10 -17 3 </float_array>
+          <technique_common>
+            <accessor count="116" offset="0" source="#_84115BF9-51D5-4C7B-99F9-BAD68281997C-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_84115BF9-51D5-4C7B-99F9-BAD68281997C-normals" name="_84115BF9-51D5-4C7B-99F9-BAD68281997C-normals">
+          <float_array id="_84115BF9-51D5-4C7B-99F9-BAD68281997C-normals-array" count="348"> -1 0 -0 -1 0 0 -1 0 -0 -1 0 -0 -1 0 -0 -1 0 0 -1 0 -0 -1 0 -0 1 0 -0 1 -0 0 1 0 -0 1 0 -0 1 0 -0 1 -0 0 1 0 -0 1 0 -0 1 0 -0 1 -0 0 1 0 -0 1 0 -0 1 0 -0 1 -0 0 1 0 -0 1 0 -0 1 0 -0 1 -0 0 1 0 -0 1 0 -0 1 0 -0 1 -0 0 1 0 -0 1 0 -0 1 0 -0 1 -0 0 1 0 -0 1 0 -0 -0 -1 0 0 -1 0 -0 -1 0 -0 -1 0 -0 -1 0 0 -1 0 -0 -1 0 -0 -1 0 -0 -1 0 0 -1 0 -0 -1 0 -0 -1 0 -0 -1 0 0 -1 0 -0 -1 0 -0 -1 0 -0 -1 0 0 -1 0 -0 -1 0 -0 -1 0 -0 1 0 0 1 -0 -0 1 0 -0 1 0 -0 1 0 0 1 -0 -0 1 0 -0 1 0 -0 1 0 0 1 -0 -0 1 0 -0 1 0 -0 1 0 0 1 -0 -0 1 0 -0 1 0 -0 1 0 0 1 -0 -0 1 0 -0 1 0 0 -0 -1 0 0 -1 0 -0 -1 0 -0 -1 0 -0 -1 0 0 -1 0 -0 -1 0 -0 -1 0 -0 1 -0 0 1 0 -0 1 0 -0 1 0 -0 1 -0 0 1 0 -0 1 0 -0 1 0 -0 1 -0 0 1 0 -0 1 0 -0 1 0 -0 1 -0 0 1 0 -0 1 0 -0 1 0 -0 1 -0 0 1 0 -0 1 0 -0 1 0 -0 1 -0 0 1 0 -0 1 0 -0 1 0 -0 1 -0 0 1 0 -0 1 0 -0 1 0 -0 1 -0 0 1 0 -0 1 0 -0 1 </float_array>
+          <technique_common>
+            <accessor count="116" offset="0" source="#_84115BF9-51D5-4C7B-99F9-BAD68281997C-normals-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_84115BF9-51D5-4C7B-99F9-BAD68281997C-tex0" name="_84115BF9-51D5-4C7B-99F9-BAD68281997C-tex0">
+          <float_array id="_84115BF9-51D5-4C7B-99F9-BAD68281997C-tex0-array" count="232"> 0.5859375 0.7890625 0.5859375 0.7734375 0.8984375 0.7734375 0.8984375 0.7890625 0.7265625 0.9453125 0.7265625 0.9140625 0.9921875 0.9140625 0.9921875 0.9453125 0.9296875 0.859375 0.9296875 0.8515625 0.953125 0.8515625 0.953125 0.859375 0.96875 0.859375 0.96875 0.8515625 0.9921875 0.8515625 0.9921875 0.859375 0.7265625 0.9921875 0.7265625 0.9609375 0.9921875 0.9609375 0.9921875 0.9921875 0.5859375 0.734375 0.5859375 0.7265625 0.8515625 0.7265625 0.8515625 0.734375 0.9296875 0.8125 0.9296875 0.8046875 0.9375 0.8046875 0.9375 0.8125 0.953125 0.8125 0.953125 0.8046875 0.9609375 0.8046875 0.9609375 0.8125 0.5859375 0.7578125 0.5859375 0.75 0.8828125 0.75 0.8828125 0.7578125 0.9296875 0.8359375 0.9296875 0.828125 0.9453125 0.828125 0.9453125 0.8359375 0.5390625 0.9921875 0.5390625 0.7890625 0.546875 0.7890625 0.546875 0.9921875 0.9765625 0.8125 0.9765625 0.8046875 0.984375 0.8046875 0.984375 0.8125 0.5859375 0.9921875 0.5859375 0.8046875 0.6171875 0.8046875 0.6171875 0.9921875 0.6796875 0.9921875 0.6796875 0.8046875 0.6875 0.8046875 0.6875 0.9921875 0.6328125 0.9921875 0.6328125 0.8046875 0.6640625 0.8046875 0.6640625 0.9921875 0.703125 0.9921875 0.703125 0.8046875 0.7109375 0.8046875 0.7109375 0.9921875 0.9296875 0.7890625 0.9296875 0.78125 0.9375 0.78125 0.9375 0.7890625 0.9609375 0.8359375 0.9609375 0.828125 0.9765625 0.828125 0.9765625 0.8359375 0.5625 0.9921875 0.5625 0.7890625 0.5703125 0.7890625 0.5703125 0.9921875 0.0078125 0.9921875 0.0078125 0.6796875 0.21875 0.6796875 0.21875 0.9921875 0.2578125 0.9921875 0.2578125 0.6953125 0.265625 0.6953125 0.265625 0.9921875 0.7265625 0.8984375 0.7265625 0.875 0.9296875 0.875 0.9296875 0.8984375 0.234375 0.9921875 0.234375 0.6953125 0.2421875 0.6953125 0.2421875 0.9921875 0.28125 0.9921875 0.28125 0.703125 0.296875 0.703125 0.296875 0.9921875 0.7265625 0.859375 0.7265625 0.8359375 0.9140625 0.8359375 0.9140625 0.859375 0.9453125 0.8984375 0.9453125 0.875 0.953125 0.875 0.953125 0.8984375 0.515625 0.9921875 0.515625 0.7265625 0.5234375 0.7265625 0.5234375 0.9921875 0.96875 0.8984375 0.96875 0.875 0.9765625 0.875 0.9765625 0.8984375 0.3125 0.9921875 0.3125 0.7265625 0.5 0.7265625 0.5 0.9921875 </float_array>
+          <technique_common>
+            <accessor count="116" offset="0" source="#_84115BF9-51D5-4C7B-99F9-BAD68281997C-tex0-array" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="_84115BF9-51D5-4C7B-99F9-BAD68281997C-vertices">
+          <input semantic="POSITION" source="#_84115BF9-51D5-4C7B-99F9-BAD68281997C-positions" />
+        </vertices>
+        <polylist count="58" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#_84115BF9-51D5-4C7B-99F9-BAD68281997C-vertices" />
+          <input offset="0" semantic="NORMAL" source="#_84115BF9-51D5-4C7B-99F9-BAD68281997C-normals" />
+          <input offset="0" semantic="TEXCOORD" source="#_84115BF9-51D5-4C7B-99F9-BAD68281997C-tex0" set="0" />
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>0 1 2 2 3 0 4 5 6 6 7 4 9 8 10 11 10 8 13 12 14 15 14 12 17 16 18 19 18 16 21 20 22 23 22 20 25 24 26 27 26 24 29 28 30 31 30 28 33 32 34 35 34 32 36 37 38 38 39 36 40 41 42 42 43 40 44 45 46 46 47 44 48 49 50 50 51 48 52 53 54 54 55 52 57 56 58 59 58 56 61 60 62 63 62 60 65 64 66 67 66 64 69 68 70 71 70 68 73 72 74 75 74 72 76 77 78 78 79 76 80 81 82 82 83 80 85 84 86 87 86 84 89 88 90 91 90 88 93 92 94 95 94 92 97 96 98 99 98 96 101 100 102 103 102 100 105 104 106 107 106 104 109 108 110 111 110 108 113 112 114 115 114 112 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="_018D323A-3C06-4E9D-9994-04B4A68635F7" name="018D323A-3C06-4E9D-9994-04B4A68635F7" >
+      <mesh>
+        <source id="_018D323A-3C06-4E9D-9994-04B4A68635F7-positions" name="_018D323A-3C06-4E9D-9994-04B4A68635F7-positions">
+          <float_array id="_018D323A-3C06-4E9D-9994-04B4A68635F7-positions-array" count="348"> -14 -20 -3 -14 -20 -1 -14 20 -1 -14 20 -3 -14 -17 -1 -14 -17 3 -14 17 3 -14 17 -1 -13 -20 -2 -13 -20 -1 -13 -17 -1 -13 -17 -2 -13 17 -2 -13 17 -1 -13 20 -1 -13 20 -2 10 -17 -1 10 -17 3 10 17 3 10 17 -1 11 -17 -2 11 -17 -1 11 17 -1 11 17 -2 13 -20 -3 13 -20 -2 13 -19 -2 13 -19 -3 13 19 -3 13 19 -2 13 20 -2 13 20 -3 14 -19 -3 14 -19 -2 14 19 -2 14 19 -3 -14 -20 -3 -13 -20 -3 -13 -20 -1 -14 -20 -1 -13 -20 -3 13 -20 -3 13 -20 -2 -13 -20 -2 13 -19 -3 14 -19 -3 14 -19 -2 13 -19 -2 -14 -17 -1 10 -17 -1 10 -17 3 -14 -17 3 -13 -17 -2 11 -17 -2 11 -17 -1 -13 -17 -1 -14 17 -1 10 17 -1 10 17 3 -14 17 3 -13 17 -2 11 17 -2 11 17 -1 -13 17 -1 13 19 -3 14 19 -3 14 19 -2 13 19 -2 -14 20 -3 -13 20 -3 -13 20 -1 -14 20 -1 -13 20 -3 13 20 -3 13 20 -2 -13 20 -2 -14 -20 -3 -14 20 -3 13 20 -3 13 -20 -3 13 -19 -3 13 19 -3 14 19 -3 14 -19 -3 -13 -20 -2 -13 -17 -2 13 -17 -2 13 -20 -2 13 -19 -2 13 19 -2 14 19 -2 14 -19 -2 11 -17 -2 11 20 -2 13 20 -2 13 -17 -2 -13 17 -2 -13 20 -2 11 20 -2 11 17 -2 -14 -20 -1 -14 -17 -1 -13 -17 -1 -13 -20 -1 10 -17 -1 10 17 -1 11 17 -1 11 -17 -1 -14 17 -1 -14 20 -1 -13 20 -1 -13 17 -1 -14 -17 3 -14 17 3 10 17 3 10 -17 3 </float_array>
+          <technique_common>
+            <accessor count="116" offset="0" source="#_018D323A-3C06-4E9D-9994-04B4A68635F7-positions-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_018D323A-3C06-4E9D-9994-04B4A68635F7-normals" name="_018D323A-3C06-4E9D-9994-04B4A68635F7-normals">
+          <float_array id="_018D323A-3C06-4E9D-9994-04B4A68635F7-normals-array" count="348"> -1 0 -0 -1 0 0 -1 0 -0 -1 0 -0 -1 0 -0 -1 0 0 -1 0 -0 -1 0 -0 1 0 -0 1 -0 0 1 0 -0 1 0 -0 1 0 -0 1 -0 0 1 0 -0 1 0 -0 1 0 -0 1 -0 0 1 0 -0 1 0 -0 1 0 -0 1 -0 0 1 0 -0 1 0 -0 1 0 -0 1 -0 0 1 0 -0 1 0 -0 1 0 -0 1 -0 0 1 0 -0 1 0 -0 1 0 -0 1 -0 0 1 0 -0 1 0 -0 -0 -1 0 0 -1 0 -0 -1 0 -0 -1 0 -0 -1 0 0 -1 0 -0 -1 0 -0 -1 0 -0 -1 0 0 -1 0 -0 -1 0 -0 -1 0 -0 -1 0 0 -1 0 -0 -1 0 -0 -1 0 -0 -1 0 0 -1 0 -0 -1 0 -0 -1 0 -0 1 0 0 1 -0 -0 1 0 -0 1 0 -0 1 0 0 1 -0 -0 1 0 -0 1 0 -0 1 0 0 1 -0 -0 1 0 -0 1 0 -0 1 0 0 1 -0 -0 1 0 -0 1 0 -0 1 0 0 1 -0 -0 1 0 -0 1 0 0 -0 -1 0 0 -1 0 -0 -1 0 -0 -1 0 -0 -1 0 0 -1 0 -0 -1 0 -0 -1 0 -0 1 -0 0 1 0 -0 1 0 -0 1 0 -0 1 -0 0 1 0 -0 1 0 -0 1 0 -0 1 -0 0 1 0 -0 1 0 -0 1 0 -0 1 -0 0 1 0 -0 1 0 -0 1 0 -0 1 -0 0 1 0 -0 1 0 -0 1 0 -0 1 -0 0 1 0 -0 1 0 -0 1 0 -0 1 -0 0 1 0 -0 1 0 -0 1 0 -0 1 -0 0 1 0 -0 1 0 -0 1 </float_array>
+          <technique_common>
+            <accessor count="116" offset="0" source="#_018D323A-3C06-4E9D-9994-04B4A68635F7-normals-array" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_018D323A-3C06-4E9D-9994-04B4A68635F7-tex0" name="_018D323A-3C06-4E9D-9994-04B4A68635F7-tex0">
+          <float_array id="_018D323A-3C06-4E9D-9994-04B4A68635F7-tex0-array" count="232"> 0.5859375 0.7890625 0.5859375 0.7734375 0.8984375 0.7734375 0.8984375 0.7890625 0.7265625 0.9453125 0.7265625 0.9140625 0.9921875 0.9140625 0.9921875 0.9453125 0.9296875 0.859375 0.9296875 0.8515625 0.953125 0.8515625 0.953125 0.859375 0.96875 0.859375 0.96875 0.8515625 0.9921875 0.8515625 0.9921875 0.859375 0.7265625 0.9921875 0.7265625 0.9609375 0.9921875 0.9609375 0.9921875 0.9921875 0.5859375 0.734375 0.5859375 0.7265625 0.8515625 0.7265625 0.8515625 0.734375 0.9296875 0.8125 0.9296875 0.8046875 0.9375 0.8046875 0.9375 0.8125 0.953125 0.8125 0.953125 0.8046875 0.9609375 0.8046875 0.9609375 0.8125 0.5859375 0.7578125 0.5859375 0.75 0.8828125 0.75 0.8828125 0.7578125 0.9296875 0.8359375 0.9296875 0.828125 0.9453125 0.828125 0.9453125 0.8359375 0.5390625 0.9921875 0.5390625 0.7890625 0.546875 0.7890625 0.546875 0.9921875 0.9765625 0.8125 0.9765625 0.8046875 0.984375 0.8046875 0.984375 0.8125 0.5859375 0.9921875 0.5859375 0.8046875 0.6171875 0.8046875 0.6171875 0.9921875 0.6796875 0.9921875 0.6796875 0.8046875 0.6875 0.8046875 0.6875 0.9921875 0.6328125 0.9921875 0.6328125 0.8046875 0.6640625 0.8046875 0.6640625 0.9921875 0.703125 0.9921875 0.703125 0.8046875 0.7109375 0.8046875 0.7109375 0.9921875 0.9296875 0.7890625 0.9296875 0.78125 0.9375 0.78125 0.9375 0.7890625 0.9609375 0.8359375 0.9609375 0.828125 0.9765625 0.828125 0.9765625 0.8359375 0.5625 0.9921875 0.5625 0.7890625 0.5703125 0.7890625 0.5703125 0.9921875 0.0078125 0.9921875 0.0078125 0.6796875 0.21875 0.6796875 0.21875 0.9921875 0.2578125 0.9921875 0.2578125 0.6953125 0.265625 0.6953125 0.265625 0.9921875 0.7265625 0.8984375 0.7265625 0.875 0.9296875 0.875 0.9296875 0.8984375 0.234375 0.9921875 0.234375 0.6953125 0.2421875 0.6953125 0.2421875 0.9921875 0.28125 0.9921875 0.28125 0.703125 0.296875 0.703125 0.296875 0.9921875 0.7265625 0.859375 0.7265625 0.8359375 0.9140625 0.8359375 0.9140625 0.859375 0.9453125 0.8984375 0.9453125 0.875 0.953125 0.875 0.953125 0.8984375 0.515625 0.9921875 0.515625 0.7265625 0.5234375 0.7265625 0.5234375 0.9921875 0.96875 0.8984375 0.96875 0.875 0.9765625 0.875 0.9765625 0.8984375 0.3125 0.9921875 0.3125 0.7265625 0.5 0.7265625 0.5 0.9921875 </float_array>
+          <technique_common>
+            <accessor count="116" offset="0" source="#_018D323A-3C06-4E9D-9994-04B4A68635F7-tex0-array" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="_018D323A-3C06-4E9D-9994-04B4A68635F7-vertices">
+          <input semantic="POSITION" source="#_018D323A-3C06-4E9D-9994-04B4A68635F7-positions" />
+        </vertices>
+        <polylist count="58" material="defaultMaterial">
+          <input offset="0" semantic="VERTEX" source="#_018D323A-3C06-4E9D-9994-04B4A68635F7-vertices" />
+          <input offset="0" semantic="NORMAL" source="#_018D323A-3C06-4E9D-9994-04B4A68635F7-normals" />
+          <input offset="0" semantic="TEXCOORD" source="#_018D323A-3C06-4E9D-9994-04B4A68635F7-tex0" set="0" />
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>0 1 2 2 3 0 4 5 6 6 7 4 9 8 10 11 10 8 13 12 14 15 14 12 17 16 18 19 18 16 21 20 22 23 22 20 25 24 26 27 26 24 29 28 30 31 30 28 33 32 34 35 34 32 36 37 38 38 39 36 40 41 42 42 43 40 44 45 46 46 47 44 48 49 50 50 51 48 52 53 54 54 55 52 57 56 58 59 58 56 61 60 62 63 62 60 65 64 66 67 66 64 69 68 70 71 70 68 73 72 74 75 74 72 76 77 78 78 79 76 80 81 82 82 83 80 85 84 86 87 86 84 89 88 90 91 90 88 93 92 94 95 94 92 97 96 98 99 98 96 101 100 102 103 102 100 105 104 106 107 106 104 109 108 110 111 110 108 113 112 114 115 114 112 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="previewRootNode" name="previewRootNode">
+      <node id="po0" name="po0" type="NODE">
+        <matrix sid="matrix">0.999999881 0 0 1 0 0.999999881 0 0 0 0 0.999999881 2.99999952 0 0 0 1</matrix>
+        <node id="pl0" name="pl0" type="NODE">
+          <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+          <instance_geometry url="#_84115BF9-51D5-4C7B-99F9-BAD68281997C">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="defaultMaterial" target="#Material_E6ACECDF-AA5D-4498-A325-C3E1434E1A74_1">
+                  <bind_vertex_input semantic="CHANNEL0" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+      </node>
+      <node id="po1" name="po1" type="NODE">
+        <matrix sid="matrix">-0.881921113 8.58675619e-08 0.471396625 -27.1771317 -8.37380725e-08 -0.999999881 2.54926817e-08 0 0.471396625 -1.69913115e-08 0.881921113 8.2929039 0 0 0 1</matrix>
+        <node id="pl0_1" name="pl0" type="NODE">
+          <matrix sid="matrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+          <instance_geometry url="#_018D323A-3C06-4E9D-9994-04B4A68635F7">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="defaultMaterial" target="#Material_10FDE145-7AF5-4914-A65C-D9DCAB0BDA3D_1">
+                  <bind_vertex_input semantic="CHANNEL0" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#previewRootNode" />
+  </scene>
+</COLLADA>
